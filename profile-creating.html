@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plante-Exchange</title>
+    <link rel="stylesheet" type="text/css" href="plante-exchange.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet"> 
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+</head>
+<body>
+
+<!--___________________________navbar using meterielize_________________________________________________-->
+    <nav>
+        <div class="nav-wrapper  light-green">
+            <a href="index.html" class="brand-logo">Plante-Exchange</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Se connecter</a></li>
+                <li><a href="profile-creating.html">Cree un profil</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+            <input placeholder="First Name" id="first_name" type="text" class="validate">
+            <label style="margin-top:5%;" for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Last Name" id="last_name" type="text" class="validate">
+          <label style="margin-top:5%;" for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="xxxxxxxx@example.com" id="disabled" type="text" class="validate">
+          <label style="margin-top:2.5%;" for="disabled">E-mail</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Password" id="password" type="password" class="validate">
+          <label style="margin-top:2.5%;" for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input  id="confirm_password" type="password" class="validate">
+          <label style="margin-top:2.5%;" for="confirm_password">Confirm Password</label>
+        </div>
+      </div>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="school.js"></script>
+
+</body>
+</html>
