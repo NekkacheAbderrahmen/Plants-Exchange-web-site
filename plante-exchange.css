@@ -1,0 +1,6 @@
+#index_bg_img{
+    background-image: url("imgs/topic4.jpg");
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}

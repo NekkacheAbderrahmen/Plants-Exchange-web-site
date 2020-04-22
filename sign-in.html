@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plante-Exchange</title>
+    <link rel="stylesheet" type="text/css" href="plante-exchange.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+</head>
+<body>
+
+<!--___________________________navbar using meterielize_________________________________________________-->
+    <nav>
+        <div class="nav-wrapper  light-green">
+            <a href="index.html" class="brand-logo">Plante-Exchange</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sign-in.html">Se connecter</a></li>
+                <li><a href="profile-creating.html">Cree un profil</a></li>
+                <li><a href="contact-us.html">Nous contacter</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row" style="margin-top:5%;">
+        <div class="col m4"></div>
+        <div class="col s12 m4">
+            <div class="card light-green ">
+                <div class="card-content white-text">
+                    <span class="card-title center-align "><h4>Connection <i class="material-icons">perm_contact_calendar</i></h4></span>
+                    <div class="input-field ">
+                        <input id="e_mail" type="text" class="autocomplete validate">
+                        <label class="white-text" for="e_mail">adresse e-mail</label>
+                    </div>
+                    <div class="input-field ">
+                        <input id="pass_word" type="password" class="validate">
+                        <label class="white-text" for="pass_word">Mot de pass</label>
+                    </div>
+                    
+                </div>
+                <div class="card-action ">
+                    <a class="brown-text darken-1" href="#">Se connecter</a>
+                    <a class="brown-text darken-1" href="#">Mot de pass oublier</a>
+                </div>
+            </div>
+        </div>
+        <div class="col m4"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="plante-exchange.js"></script>
+
+</body>
+</html>

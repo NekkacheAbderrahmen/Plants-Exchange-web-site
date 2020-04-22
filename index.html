@@ -10,32 +10,177 @@
     <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
 </head>
 <body>
-
+<div class="container">
 <!--___________________________navbar using meterielize_________________________________________________-->
     <nav>
-        <div class="nav-wrapper  light-green">
+        <div class="nav-wrapper light-green">
             <a href="index.html" class="brand-logo">Plante-Exchange</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#">Se connecter</a></li>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>                
+            <ul id="nav-mobile" class="right hide-on-med-and-down"> 
+                <li><a href="create-offre.html">Cree une offre</a></li>
+                <li><a href="sign-in.html">Se connecter</a></li>
                 <li><a href="profile-creating.html">Cree un profil</a></li>
-                <li><a href="#">Nous contacter</a></li>
+                <li><a href="contact-us.html">Nous contacter</a></li>           
             </ul>
         </div>
     </nav>
+    <form class="white hide-on-med-and-down">
+        <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i>Recherchez</label>
+            <i class="material-icons">close</i>
+        </div>
+    </form>
+
+    <ul class="sidenav light-green" id="slide-out">
+        <li ><a class="white-text" href="create-offre.html">Cree une offre</a></li>
+        <li ><a class="white-text" href="sign-in.html">Se connecter</a></li>
+        <li ><a class="white-text" href="profile-creating.html">Cree un profil</a></li>
+        <li ><a  class="white-text" href="contact-us.html">Nous contacter</a></li>
+        <li >
+            <form class="white">
+                <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i>Recherchez</label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </li>
+    </ul>
+    
 
 
     <!--_____________________attractive citation_______________________________________-->
-    <div class="row" style="margin-top:5%;">
+   <!-- <div id="index_bg_img" class="row" style="margin-top:5%;">
         <div class="col s3"></div>
-        <h3 class="col s6 light-green-text center-align">
-            Voyez La forme d'une plante, sa exprime les souvenirs de toute une évolution.
+        <h3 class="col s6 white-text center-align">
+            Voire La forme d'une plante, sa exprime les souvenirs de toute une évolution.
         </h3>
         <div class="col s3"></div>
+    </div>-->
+
+    
+    <div class="row">
+        <div class="col s12 ">
+        <div class="card ">
+            <div class="card-content brown-text lighten-1">
+                <div class="card-image">
+                    <img src="imgs/topic4.jpg">
+                    <span class="card-title center-align" ><!-- <h1>Voyez La forme d'une plante, sa exprime les souvenirs de toute une évolution.--></span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!--_____________________________________________________________________________________-->
+<!--______________________________________the collection__________________________________-->
+  
+    <div >
+        <ul id="elements_list" class="collection">
+            <li class="collection-item ">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="imgs/6.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>palnte: gitanne </br>Tel: 0557289929 </br>Mail:nekkacheabderrahmen@gmail.com</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Consultez</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="collection-item">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="imgs/6.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Consultez</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="collection-item">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="imgs/6.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Consultez</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="collection-item">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="imgs/6.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Consultez</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="collection-item">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="imgs/6.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>Name:hkqs,hjv</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Consultez</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+
     </div>
 
 
 
+       <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyAchMJk8cYMueCarEzkm2-CMfulnd1bQBU",
+                authDomain: "plant-exchange-73484.firebaseapp.com",
+                databaseURL: "https://plant-exchange-73484.firebaseio.com",
+                projectId: "plant-exchange-73484",
+                storageBucket: "plant-exchange-73484.appspot.com",
+                messagingSenderId: "851431701081",
+                appId: "1:851431701081:web:a9afd1bea1c52fcadb0f48"
 
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db= firebase.firestore();
+            db.settings({timestampsinsnapshots: true});
+        </script>
 
 
 
@@ -45,8 +190,9 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="school.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="plante-exchange.js"></script>
 
+</div>
 </body>
 </html>
