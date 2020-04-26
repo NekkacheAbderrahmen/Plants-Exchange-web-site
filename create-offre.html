@@ -51,33 +51,57 @@
 
 
     <div class="row">
-        <div class="col m3"></div>
-        <div class="col m6">
-            <div class="card blue-grey darken-1">
+        <div class="col m2"></div>
+        <div class="col m8">
+            <form id="create_offre_card" class="card blue-grey darken-1">
                 <span class="card-title center-align "><h4 class="white-text">Creation d'une offre</h4></span>
-                <div class="card-content white-text">
-                    <input id="element_name" type="text" class="validate">
-                    <label for="element_name">Nom de l'element</label>
+                <div id="element_name_tag" class="card-content white-text">
+                    <input id="element_name_id" name="element_name"  type="text" class="validate">
+                    <label for="element_name_id">Nom de l'element</label>
                 </div>
                 <div class="card-content white-text">
-                    <input id="contact_way_tel" type="text" class="validate">
+                    <input name="contry_name" id="contry_name_id" type="text" class="validate">
+                    <label for="contry_name_id">Pays</label>
+                </div>
+                <div class="card-content white-text">
+                    <input name="town_name" id="town_name_id" type="text" class="validate">
+                    <label for="town_name_id">Ville</label>
+                </div>
+                <div class="card-content white-text">
+                    <input name="price" id="price_id" type="text" class="validate">
+                    <label for="price_id">Prix</label>
+                </div>
+                <div class="card-content white-text">
+                    <input name="tel" id="tel_id" type="text" class="validate">
                     <label for="contact_way_tel">Telephone</label>
                 </div>
-                <div class="card-content white-text">
-                    <input  id="contact_way_mail" type="text" class="validate">
-                    <label for="contact_way_mail">mail</label>
+                <div  class="card-action">
+                <a id="offre_creating" href="#" >create</a>
                 </div>
-                <div class="card-action">
-                <a href="#">create</a>
-                </div>
-            </div>
+            </form>
         </div>
-        <div class="col m3"></div>
+        <div class="col m2"></div>
     </div>
 
 
 
+    <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyAchMJk8cYMueCarEzkm2-CMfulnd1bQBU",
+                authDomain: "plant-exchange-73484.firebaseapp.com",
+                databaseURL: "https://plant-exchange-73484.firebaseio.com",
+                projectId: "plant-exchange-73484",
+                storageBucket: "plant-exchange-73484.appspot.com",
+                messagingSenderId: "851431701081",
+                appId: "1:851431701081:web:a9afd1bea1c52fcadb0f48"
 
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db= firebase.firestore();
+            db.settings({timestampsinsnapshots: true});
+        </script>
 
 
 
